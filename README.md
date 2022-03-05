@@ -21,7 +21,7 @@ This repository to implement Canary deployment in kubernetes.
 
 5. Access nginx app using your serverIP:NodePort. Refresh the url untill you get two version on webpage.
 
-    To check node port use   command: kubectl get svc
+        To check node port use   command: kubectl get svc
 
 6. Now Increaste the no.of replicas from 1 to 3 of secondary deployment.
 
