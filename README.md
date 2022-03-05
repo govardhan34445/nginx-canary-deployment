@@ -2,8 +2,8 @@ This repository to implement Canary deployment in kubernetes.
 
 1. Create configmaps for nginx version:1 and nginx version:2
 
-     command: kubectl apply -f nginx-1-configmap.yaml
-              kubectl apply -f nginx-2-configmap.yaml
+     command:  kubectl apply -f nginx-1-configmap.yaml
+     command:  kubectl apply -f nginx-2-configmap.yaml
 
 2. Create nginx version 1 deployement named as "intial-deployment" with 3 no.of replicas
 
