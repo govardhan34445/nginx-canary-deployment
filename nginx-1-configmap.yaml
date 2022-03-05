@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-html-configmap-1
+  namespace: default
+data:
+  index.html: |
+    <html>
+    <h1>Hello World!</h1>
+    <p>This is version 1</p>
+    </html>
