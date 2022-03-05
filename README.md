@@ -17,7 +17,7 @@ This repository to implement Canary deployment in kubernetes.
 
 4. create the service with common lable of "app: nginx"
 
-      command: kubectl apply -f nginx-service.yaml
+        command: kubectl apply -f nginx-service.yaml
 
 5. Access nginx app using your serverIP:NodePort. Refresh the url untill you get two version on webpage.
 
