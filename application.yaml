@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 'myapp-argo-applucation'
+  namespace: 'argocd'
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: 'myapp'
+  source:
+    path: 'dev'
+    repoURL: 'https://github.com/govardhan34445/nginx-canary-deployment.git'
+    targetRevision: HEAD
+  project: 'default'
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
+
