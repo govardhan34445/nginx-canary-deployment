@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: 'myapp'
+    namespace: 'default'
   source:
     path: 'dev'
     repoURL: 'https://github.com/govardhan34445/nginx-canary-deployment.git'
